@@ -12,4 +12,18 @@ Une URL est utilisé quand un navigateur fait une requête vers un serveur pour 
 
 ![Composant URL](/assets/url.png).
 
+*Informations supplémentaires URL [url MDN](https://developer.mozilla.org/fr/docs/Apprendre/Comprendre_les_URL).
+
+### Ajouter un paramètre à une URL
+
+Dans l'exemple ci-dessous nous allons créer un lien vers la page film.php en passant un paramètre "titre" avec pour valeur "goonies".
+
+    <a href="film.php?titre=goonies">The Goonies</a>
+
+### Ajouter plusieurs paramètres à une URL
+
+Pour ajouter plusieurs paramètre il suffit de les séparer par un **&**, dans l'exemple ci-dessous nous allons trois paramètres.
+
+    <a href="film?php?titre=goonies&likes=100&dislikes=0">The Goonies</a>
+
 ## Transmettre des donnée via un formulaire
