@@ -10,11 +10,11 @@ Une URL est utilisé quand un navigateur fait une requête vers un serveur pour 
 2. **Nom de domaine** : Il permet d'indiquer le serveur web qui détient la ressource. Cela peut être aussi une adresse IP et également suivi d'un port *Ex: 192.168.0.1:80*
 3. **Chemin** *(path)* : Il indique le chemin de la ressource sur le serveur web 
 
-
+<br>
 <p align="center">
     <img width="500" src="assets/url.png">
 </p>
-
+<br>
 
 *Informations supplémentaires <https://developer.mozilla.org/fr/docs/Apprendre/Comprendre_les_URL>*
 
