@@ -1,7 +1,7 @@
 # PHP_COURS
 ## Transmettre des données via l'URL
 ### Création d'une URL 
-**Url : Uniform Resource Locator** *(Localisateur uniforme de ressource)*
+**URL : Uniform Resource Locator** *(Localisateur uniforme de ressource)*
 Une URL est utilisé quand un navigateur fait une requête vers un serveur pour une ressource(document HTML, image, vidéo...)
 
 **Une URL est composé de 3 composants**
