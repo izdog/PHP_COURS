@@ -10,9 +10,9 @@ Une URL est utilisé quand un navigateur fait une requête vers un serveur pour 
 2. **Nom de domaine** : Il permet d'indiquer le serveur web qui détient la ressource. Cela peut être aussi une adresse IP et également suivi d'un port *Ex: 192.168.0.1:80*
 3. **Chemin** *(path)* : Il indique le chemin de la ressource sur le serveur web 
 
-![Composant URL](/assets/url.png).
+<img align="center" width="500" src="/assets/url.pgn">
 
-*Informations supplémentaires URL [url MDN](https://developer.mozilla.org/fr/docs/Apprendre/Comprendre_les_URL).
+*Informations supplémentaires <https://developer.mozilla.org/fr/docs/Apprendre/Comprendre_les_URL>*
 
 ### Ajouter un paramètre à une URL
 
@@ -22,8 +22,32 @@ Dans l'exemple ci-dessous nous allons créer un lien vers la page film.php en pa
 
 ### Ajouter plusieurs paramètres à une URL
 
-Pour ajouter plusieurs paramètre il suffit de les séparer par un **&**, dans l'exemple ci-dessous nous allons trois paramètres.
+Pour ajouter plusieurs paramètre il suffit de les séparer par un **&**, dans l'exemple ci-dessous nous allons envoyer trois paramètres.
 
     <a href="film?php?titre=goonies&likes=100&dislikes=0">The Goonies</a>
+
+### Récupérer les données des paramètres
+
+Pour récupérer les données de paramètres nous allons utiliser la variable SuperGlobal **$_GET**. Cette variable nous retournera un tableau associatif. Les clefs de ce tableau associatif seront les noms des paramètres de l'URL.
+
+Pour le lien ci-dessous :
+
+    ```HTML
+    <a href="film?php?titre=goonies&likes=100&dislikes=0">The Goonies</a>
+    ```
+
+Nous aurons :
+
+    ```PHP
+    <?php
+        $_GET = [
+            'titre' => 'goonies',
+            'likes' => '100',
+            'dislikes' => '0'
+        ];
+    ```
+
+**Attention** les données des paramètres peuvent être modifiés par l'utilisateur. Avant de les utiliser il faudra les traiter.
+**Ne jamais faire confiance à l'utilisateur.**
 
 ## Transmettre des donnée via un formulaire
