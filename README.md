@@ -22,30 +22,37 @@ Une URL est utilisé quand un navigateur fait une requête vers un serveur pour 
 
 Dans l'exemple ci-dessous nous allons créer un lien vers la page film.php en passant un paramètre "titre" avec pour valeur "goonies".
 
+    ```html
     <a href="film.php?titre=goonies">The Goonies</a>
+    ```
 
 ### Ajouter plusieurs paramètres à une URL
 
 Pour ajouter plusieurs paramètre il suffit de les séparer par un **&**, dans l'exemple ci-dessous nous allons envoyer trois paramètres.
 
+    ```html
     <a href="film?php?titre=goonies&likes=100&dislikes=0">The Goonies</a>
-
+    ```
 ### Récupérer les données des paramètres
 
 Pour récupérer les données de paramètres nous allons utiliser la variable SuperGlobal **$_GET**. Cette variable nous retournera un tableau associatif. Les clefs de ce tableau associatif seront les noms des paramètres de l'URL.
 
 Pour le lien ci-dessous :
 
+    ```html
     <a href="film?php?titre=goonies&likes=100&dislikes=0">The Goonies</a>
+    ```
 
 Nous aurons :
 
+    ```php
     <?php
         $_GET = [
             'titre' => 'goonies',
             'likes' => '100',
             'dislikes' => '0'
         ];
+    ```
 
 **Attention** les données des paramètres peuvent être modifiées par l'utilisateur. Avant de les utiliser il faudra les traiter.
 **Ne jamais faire confiance à l'utilisateur.**
