@@ -32,20 +32,16 @@ Pour récupérer les données de paramètres nous allons utiliser la variable Su
 
 Pour le lien ci-dessous :
 
-    ```HTML
     <a href="film?php?titre=goonies&likes=100&dislikes=0">The Goonies</a>
-    ```
 
 Nous aurons :
 
-    ```PHP
     <?php
         $_GET = [
             'titre' => 'goonies',
             'likes' => '100',
             'dislikes' => '0'
         ];
-    ```
 
 **Attention** les données des paramètres peuvent être modifiés par l'utilisateur. Avant de les utiliser il faudra les traiter.
 **Ne jamais faire confiance à l'utilisateur.**
