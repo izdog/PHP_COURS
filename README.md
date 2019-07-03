@@ -11,7 +11,7 @@ Une URL est utilisé quand un navigateur fait une requête vers un serveur pour 
 3. **Chemin** *(path)* : Il indique le chemin de la ressource sur le serveur web 
 
 
-<p>
+<p align="center">
     <img width="500" src="assets/url.png">
 </p>
 
