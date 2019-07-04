@@ -1,3 +1,8 @@
+<?php 
+    require 'data/datas.php';
+
+    
+?>
 <!DOCTYPE html>
 <html lang="FR">
 <head>
