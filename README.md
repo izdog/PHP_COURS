@@ -104,7 +104,7 @@ Exemple :
 </form>
 ```
 
-L'attribut `name` des champs de saisie*(input, select, ...)* est obligatoire, la valeur de cet attribut sera notre clef(indice) dans le tableau associatif de la SuperGlobal `$_POST`. L'attribut `value` n'est pas obligatoire sauf pour certains champs de saisies ou pour pré-remplir nos champs de saisies. L'attribut `value` sera obligatoire pour les `<input type="radio">`, `<input type="checkbox">` et les `<option>` des balises `<select>`. 
+L'attribut `name` des champs de saisie *(input, select, ...)* est obligatoire, la valeur de cet attribut sera notre clef(indice) dans le tableau associatif de la SuperGlobal `$_POST`. L'attribut `value` n'est pas obligatoire sauf pour certains champs de saisies ou pour pré-remplir nos champs de saisies. L'attribut `value` sera obligatoire pour les `<input type="radio">`, `<input type="checkbox">` et les `<option>` des balises `<select>`. 
 
 Pour les checkbox la valeur de l'attribut `name` sera un tableau : 
 ```html 
