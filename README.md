@@ -59,3 +59,75 @@ Nous aurons :
 **Ne jamais faire confiance à l'utilisateur.**
 
 ## Transmettre des donnée via un formulaire
+
+### Création d'un formulaire
+
+Pour créer un formulaire nous utiliserons la balise `<form>`, elle prend deux attributs qui sont `action` et `method`
+
+* `action` sera l'URI qui traitera les informations envoyées par le formulaire.
+* `method`cette attribut permettra de déterminé la méthode HTTP qui sera utilisé pour envoyer les informations au serveur. GET ou POST
+
+Exemple : 
+
+```html
+<form action="traitement.php" method="POST">
+    <label for="prenom">Prenom :</label>
+    <input type="text" name="prenom" id="prenom" placeholder="votre prenom">
+    <label for="email">E-mail :</label>
+    <input type="email" name="email" id="email" placeholder="email">
+    <p>Votre sexe :</p>
+    <div>
+        <input id="homme" type="radio" name="sexe" value="H">
+        <label for="homme">Homme</label>
+    </div>
+    <div>
+        <input id="femme" type="radio" name="sexe" value="F">
+        <label for="femme">Femme</label>
+    </div>  
+    <p>Votre pays :</p>
+    <select name="pays">
+        <option value="allemagne">Allemagne</option>
+        <option value="angleterre">Angleterre</option>
+        <option value="france">France</option>
+        <option value="suede">Suède</option>
+    </select>
+    <div>
+        <p>Hobbies : </p>
+        <label for="cinema">Cinéma : </label>
+        <input id="cinema" name="hobbies[]" type="checkbox" value="cinema">
+        <label for="skateboard">Skateboard : </label>
+        <input id="skateboard" name="hobbies[]" type="checkbox" value="Skateboard">
+        <label for="musique">Musique : </label>
+        <input id="musique" name="hobbies[]" type="checkbox" value="musique"> 
+    </div>
+    <button type="submit">S'inscrire</button>
+</form>
+```
+
+L'attribut `name` des champs de saisie*(input, select, ...)* est obligatoire, la valeur de cet attribut sera notre clef(indice) dans le tableau associatif de la SuperGlobal `$_POST`. L'attribut `value` n'est pas obligatoire sauf pour certains champs de saisies ou pour pré-remplir nos champs de saisies. L'attribut `value` sera obligatoire pour les `<input type="radio">`, `<input type="checkbox">` et les `<option>` des balises `<select>`. 
+
+Pour les checkbox la valeur de l'attribut `name` sera un tableau : 
+```html 
+<label for="cinema">Cinéma : </label>
+<input id="cinema" name="hobbies[]" type="checkbox" value="cinema">
+<label for="skateboard">Skateboard : </label>
+<input id="skateboard" name="hobbies[]" type="checkbox" value="Skateboard">
+<label for="musique">Musique : </label>
+<input id="musique" name="hobbies[]" type="checkbox" value="musique"> 
+```
+
+### Récupèrer les données
+
+Pour récupérer les données nous allons utiliser la SuperGlobal `$_POST`, pour le formulaire ci-dessus nous obtiendrons :
+
+```php
+$_POST = [
+    'prenom' => 'Jean',
+    'email'= > 'jean@gmail.com',
+    'sexe' => 'H',
+    'pays' => 'france',
+    'hobbies' => [
+        '0' => 'cinema',
+        '1' => 'skateboard'
+    ]
+];
