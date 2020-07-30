@@ -94,3 +94,11 @@ footer p {
     margin: 0;
     padding: 15px;
 }
+
+.mt-10 {
+    margin-top: 100px;
+}
+
+.mb-10 {
+    margin-bottom: 100px;
+}

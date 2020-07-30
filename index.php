@@ -38,27 +38,23 @@
         <div class="row">
 
             <!-- LISTE FILM  -->
-            <div class="col-9">
-                <section>
-                    <h1>Ma liste de films préférés</h1>
-                    <hr>
-                    <div class="films">
-                        <ul class="films__container">
-
-                                <li class="films__item"><a href="#">Aliens</a></li>
-                                <li class="films__item"><a href="#">Child's play</a></li>
-                                <li class="films__item"><a href="#">The Goonies</a></li>
-                                <li class="films__item"><a href="#">Aliens</a></li>
-                                <li class="films__item"><a href="#">Morse</a></li>
-                                <li class="films__item"><a href="#">Mad Max 2</a></li>
-                                <li class="films__item"><a href="#">Aliens</a></li>
-                                <li class="films__item"><a href="#">Moonrise Kingdom</a></li>
-                                <li class="films__item"><a href="#">Sorcerer</a></li>
-                                <li class="films__item"><a href="#">Wake in fright</a></li>
-                        </ul>
-                    </div>
-                    
-                </section>
+            <div class="col-9 mb-10">
+                <h1 class="mt-10">Ma liste de films préférés</h1>
+                <hr>
+                <div class="films">
+                    <ul class="films__container">
+                        <li class="films__item"><a href="#">Aliens</a></li>
+                        <li class="films__item"><a href="#">Child's play</a></li>
+                        <li class="films__item"><a href="#">The Goonies</a></li>
+                        <li class="films__item"><a href="#">Aliens</a></li>
+                        <li class="films__item"><a href="#">Morse</a></li>
+                        <li class="films__item"><a href="#">Mad Max 2</a></li>
+                        <li class="films__item"><a href="#">Aliens</a></li>
+                        <li class="films__item"><a href="#">Moonrise Kingdom</a></li>
+                        <li class="films__item"><a href="#">Sorcerer</a></li>
+                        <li class="films__item"><a href="#">Wake in fright</a></li>
+                    </ul>
+                </div>        
             </div>
             <!-- FIN LISTE FILM -->
 
@@ -68,14 +64,12 @@
                     <h1>Genres</h1>
                     <hr>
                     <ul>
-
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Aventure</a></li>
-                            <li><a href="#">Drame</a></li>
-                            <li><a href="#">Fantastique</a></li>
-                            <li><a href="#">Horreur</a></li>
-                            <li><a href="#">Science-fiction</a></li>
-
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Aventure</a></li>
+                        <li><a href="#">Drame</a></li>
+                        <li><a href="#">Fantastique</a></li>
+                        <li><a href="#">Horreur</a></li>
+                        <li><a href="#">Science-fiction</a></li>
                     </ul>
                 </aside>
             </div>

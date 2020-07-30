@@ -59,14 +59,12 @@
                         <h1>Genres</h1>
                         <hr>
                         <ul>
-
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Aventure</a></li>
                             <li><a href="#">Drame</a></li>
                             <li><a href="#">Fantastique</a></li>
                             <li><a href="#">Horreur</a></li>
-                            <li><a href="#">Science-fiction</a></li>
-                            
+                            <li><a href="#">Science-fiction</a></li>      
                         </ul>
                     </aside>
                 </div>
