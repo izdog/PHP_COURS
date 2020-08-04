@@ -28,7 +28,7 @@ Dans l'exemple ci-dessous nous allons créer un lien vers la page film.php en pa
 
 ### Ajouter plusieurs paramètres à une URL
 
-Pour ajouter plusieurs paramètre il suffit de les séparer par un **&**, dans l'exemple ci-dessous nous allons envoyer trois paramètres.
+Pour ajouter plusieurs paramètres il suffit de les séparer par un **&**, dans l'exemple ci-dessous nous allons envoyer trois paramètres.
 
 ```html
 <a href="film.php?titre=goonies&likes=100&dislikes=0">The Goonies</a>
