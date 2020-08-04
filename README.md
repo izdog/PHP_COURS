@@ -65,7 +65,7 @@ Nous aurons :
 Pour créer un formulaire nous utiliserons la balise `<form>`, elle prend deux attributs qui sont `action` et `method`
 
 * `action` sera l'URI qui traitera les informations envoyées par le formulaire.
-* `method`cette attribut permettra de déterminé la méthode HTTP qui sera utilisé pour envoyer les informations au serveur. GET ou POST
+* `method`cette attribut permettra de déterminer la méthode HTTP qui sera utilisé pour envoyer les informations au serveur. GET ou POST
 
 Exemple : 
 
@@ -104,7 +104,7 @@ Exemple :
 </form>
 ```
 
-L'attribut `name` des champs de saisie *(input, select, ...)* est obligatoire, la valeur de cet attribut sera notre clef(indice) dans le tableau associatif de la SuperGlobal `$_POST`. L'attribut `value` n'est pas obligatoire sauf pour certains champs de saisies ou pour pré-remplir nos champs de saisies. L'attribut `value` sera obligatoire pour les `<input type="radio">`, `<input type="checkbox">` et les `<option>` des balises `<select>`. 
+L'attribut `name` des champs de saisie *(input, select, ...)* est obligatoire, la valeur de cet attribut sera notre clef(indice) dans le tableau associatif de la SuperGlobal `$_POST`. L'attribut `value` n'est pas obligatoire sauf pour certains champs de saisies ou pour pré-remplir nos champs de saisies. L'attribut `value` sera obligatoire pour les champs de saisies : `<input type="radio">`, `<input type="checkbox">` et les `<option>` des balises `<select>`. 
 
 Pour les checkbox la valeur de l'attribut `name` sera un tableau : 
 ```html 
@@ -118,7 +118,7 @@ Pour les checkbox la valeur de l'attribut `name` sera un tableau :
 
 ### Récupèrer les données
 
-Pour récupérer les données nous allons utiliser la SuperGlobal `$_POST`, pour le formulaire ci-dessus nous obtiendrons :
+Pour récupérer les données nous allons utiliser la SuperGlobal `$_POST`. Pour le formulaire ci-dessus nous obtiendrons :
 
 ```php
 $_POST = [
